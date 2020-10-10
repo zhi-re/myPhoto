@@ -3,9 +3,9 @@
   <scroll-view scroll-y="true">
     <view class="gridview">
       <view class="item" wx:for="{{categoryData}}" wx:key="index">
-        <navigator url="{{'../categorydetail/categorydetail?categoryDetailID='+item.id + '&categoryDetailTitle=' + item.name}}">
-          <image class="img" src=" {{item.cover}}" mode="aspectFill" />
-          <text class="label">{{item.name}}</text>
+        <navigator url="{{'../categorydetail/categorydetail?categoryDetailID='+item.id + '&categoryDetailTitle=' + item.title}}">
+          <image class="img" src=" {{item.thumbUrl}}" mode="aspectFill" />
+          <text class="label">{{item.title}}</text>
         </navigator>
       </view>
     </view>

@@ -13,7 +13,7 @@ Page({
 
     var that = this;
     wx.request({
-      url: app.globalData.URL_BASE + app.globalData.COMMON_SEPARATOR + options.categoryDetailID + app.globalData.URL_CATEGORY_DETAIL,
+      url: app.globalData.URL_SORT_ONE + options.categoryDetailID,
       header: {
         'content-type': 'application/json'
       },
@@ -21,9 +21,9 @@ Page({
       dataType: 'json',
       success(res) {
         console.log("请求成功")
-        console.log(res.data.res.vertical)
+        console.log(res.data.data)
         that.setData({
-          categoryDetailData: res.data.res.vertical,
+          categoryDetailData: res.data.data
         })
       },
       fail() {

@@ -6,7 +6,7 @@
     "pages/login/login"
   ],
   "window": {
-    "navigationBarTitleText": "Wallpaper"
+    "navigationBarTitleText": "MyPhoto"
   },
   "networkTimeout": {
     "request": 10000,

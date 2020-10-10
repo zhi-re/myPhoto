@@ -18,7 +18,7 @@ Page({
       success(res) {
         console.log("请求成功")
         that.setData({
-          categoryData: res.data.res.category
+          categoryData: res.data.data
         })
       },
       fail() {
