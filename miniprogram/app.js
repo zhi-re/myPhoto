@@ -27,7 +27,7 @@ App({
     globalData: {
         COMMON_SEPARATOR : "/",
         URL_BASE : "https://zhire.cc/get/getSort",
-        URL_CATEGORY_DETAIL : "/vertical?limit=30&adult=false&first=1&order=new",
+        // URL_CATEGORY_DETAIL : "/vertical?limit=30&adult=false&first=1&order=new",
         URL_SORT_ONE : "https://zhire.cc/get/getSortByOne?id=",
         URL_PHOTO_ONE : "https://zhire.cc/get/getPhotoOne?id=",
 

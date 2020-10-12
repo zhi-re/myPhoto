@@ -2,28 +2,27 @@
 const app = getApp();
 
 Page({
-  data: {
+    data: {},
 
-  },
-  
-  onLoad: function() {
-    var that = this;
-    wx.request({
-      url: app.globalData.URL_BASE,
-      header: {
-        'content-type': 'application/json'
-      },
-      method: 'GET',
-      dataType: 'json',
-      success(res) {
-        console.log("请求成功")
-        that.setData({
-          categoryData: res.data.data
+    onLoad: function () {
+        console.log("开始请求")
+        var that = this;
+        wx.request({
+            url: app.globalData.URL_BASE,
+            header: {
+                'content-type': 'application/json'
+            },
+            method: 'GET',
+            dataType: 'json',
+            success(res) {
+                console.log("请求成功")
+                that.setData({
+                    categoryData: res.data.data
+                })
+            },
+            fail() {
+                console.log("请求失败")
+            }
         })
-      },
-      fail() {
-        console.log("请求失败")
-      }
-    })
-  }
+    }
 })
