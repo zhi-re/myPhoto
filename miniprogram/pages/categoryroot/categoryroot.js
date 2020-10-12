@@ -24,5 +24,13 @@ Page({
                 console.log("请求失败")
             }
         })
+    },
+
+    onShareAppMessage: function () {
+        return {
+            title: 'MyPhoto',
+            desc: '我的照片!',
+            path: '/pages/categoryroot/categoryroot'
+        }
     }
 })
